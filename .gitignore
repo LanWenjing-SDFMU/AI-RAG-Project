@@ -1,0 +1,10 @@
+﻿__pycache__/
+*.pyc
+chroma_db/
+*.sqlite3
+*.bin
+.DS_Store
+chat_history/
+users.json
+diagnosis_records.json
+md5.txt
