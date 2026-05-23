@@ -1,10 +1,51 @@
-﻿__pycache__/
-*.pyc
-chroma_db/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+*.egg
+dist/
+build/
+*.db
 *.sqlite3
-*.bin
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
-chat_history/
-users.json
-diagnosis_records.json
-md5.txt
+Thumbs.db
+
+# ChromaDB (vector store data - can be regenerated)
+backend/chroma_db/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+operation_log.json
+
+# Uploads
+*.zip
+*.tar.gz
+
+# Git
+RagProject/.gitignore

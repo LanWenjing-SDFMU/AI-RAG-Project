@@ -1,0 +1,802 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择药物：\n\n- **干咳无痰**：推荐右美沙芬、可待因糖浆；如伴咽痒，可使用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐氨溴索（沐舒坦）、乙酰半胱氨酸或氨溴特罗口服液。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "干咳无痰",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用右美沙芬或可待因糖浆；如伴有咽痒，可选用氢溴酸右美沙芬片。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "舌头根发麻",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "舌头根发麻不属于上述参考资料中涵盖的症状（如腹泻、便秘、恶心呕吐、过敏或咳嗽），因此无法根据所提供资料给出推荐药物。\n\n该症状可能与神经、口腔、过敏反应、局部刺激或其他系统性疾病有关，建议及时就医以明确病因并获得针对性处理。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择药物：\n\n- **干咳无痰**：推荐右美沙芬、可待因糖浆；如伴咽痒，可使用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐氨溴索（沐舒坦）、乙酰半胱氨酸或氨溴特罗口服液。  \n\n请根据您的具体症状选择对应药物。如症状持续或加重，建议及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "nnn",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您的提问“nnn”不明确，无法识别具体问题。请提供清晰的症状描述或明确的健康相关疑问，以便我为您提供准确的信息或建议。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "你好、",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "你好！请问有什么可以帮您的吗？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我为什么看不到你说话",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您好！我是一个AI助手，通过文字与您交流，并不会发出语音或“说话”。如果您期待的是语音回复，可能需要使用支持语音输出的设备或应用。目前您看到的是我的文字回复——这正是我在“说话”的方式。\n\n如果存在显示异常（例如文字未正常加载），请尝试刷新页面或检查网络连接。如有其他问题，欢迎随时告诉我！",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我咳嗽怎么办",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择处理方式：\n\n- **干咳无痰**：推荐使用右美沙芬、可待因糖浆；如伴有咽痒，可选用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐使用氨溴索（沐舒坦）、乙酰半胱氨酸或氨溴特罗口服液。\n\n建议您根据自身症状选择对应药物。若咳嗽持续超过一周、加重，或伴有发热、胸痛、呼吸困难等症状，请及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "胸闷气短怎么办",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "胸闷气短建议进行以下检查以明确病因：\n\n- **胸部CT**  \n- **肺功能检查**  \n- **血气分析**\n\n这些检查有助于评估是否存在肺部疾病（如肺炎、肺栓塞、慢性阻塞性肺病）、心脏问题或其他系统性疾病。若症状突发、严重或伴有胸痛、晕厥、呼吸困难等，请立即就医，排除急性心血管或呼吸系统急症。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "尿频尿急",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "尿频尿急建议进行以下检查：\n\n- **尿常规**  \n- **泌尿系B超**  \n- **尿培养**\n\n这些检查有助于明确是否存在尿路感染、前列腺疾病（男性）、膀胱过度活动症或其他泌尿系统病变。如症状持续或伴有尿痛、血尿、发热等，应及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周，建议就医进一步评估，必要时做胸部CT等检查以排除其他病因。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周或加重，建议及时就医，必要时进行胸部CT等检查以排除潜在疾病。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周，建议就医，并考虑进行**胸部CT、血常规、支原体抗体**等检查（参考：咳嗽超过3周的推荐检查）。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若症状持续超过2周，建议及时就医，必要时进行胸部CT等检查以排除潜在疾病。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周，建议就医，并根据临床需要考虑进行**胸部CT、血常规、支原体抗体**等检查。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周，建议就医，并考虑进行**胸部CT、血常规、支原体抗体**等检查以明确病因。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "是干咳无痰的",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周，建议就医，并考虑进行**胸部CT、血常规、支原体抗体**等检查以明确病因。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我咳嗽，该吃什么药？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "您需要根据咳嗽的类型选择药物：\n\n- **如果是干咳无痰**：推荐使用 **右美沙芬** 或 **可待因糖浆**；如伴有咽痒，可选用 **氢溴酸右美沙芬片**。  \n- **如果是湿咳有痰**：推荐使用 **氨溴索（沐舒坦）**、**乙酰半胱氨酸** 或 **氨溴特罗口服液**。\n\n请结合自身症状判断类型。若咳嗽持续超过2周，或伴有发热、胸闷、气短等症状，建议及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "那干咳无痰类型的呢？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰类型推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若咳嗽持续超过2周，建议就医，并考虑进行胸部CT、血常规、支原体抗体等检查以明确病因。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "头晕该怎么办呢？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "头晕（特别是感觉天旋地转）建议进行以下检查以明确病因：\n\n- **头颅磁共振（MRI）**  \n- **颈动脉超声**  \n- **前庭功能检查**\n\n这些检查有助于排查脑部病变、椎基底动脉供血不足、内耳前庭系统疾病（如良性阵发性位置性眩晕、梅尼埃病）等常见原因。\n\n若头晕频繁发作、持续不缓解，或伴有头痛、呕吐、视物模糊、肢体无力等症状，请及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "心脏刺痛该怎么办？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "心脏刺痛建议进行以下检查以明确病因：\n\n- **心肌五项**（包括肌钙蛋白、CK-MB等，评估心肌损伤）  \n- **心电图**（筛查心律失常、心肌缺血或梗死）  \n- **心脏彩超**（评估心脏结构与功能）\n\n⚠️ 注意：若刺痛剧烈、持续不缓解，或伴有胸闷、气短、出汗、放射至左肩/下颌等症状，需立即就医，排除急性冠脉综合征（如心绞痛、心肌梗死）等急症。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳血怎么办？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳血建议尽快进行以下检查以明确病因：\n\n- **高分辨率CT**（评估肺部结构，排查结核、肿瘤、支气管扩张等）  \n- **支气管镜**（直接观察气道出血部位，并可取活检）  \n- **凝血功能**（排除凝血障碍导致的出血）\n\n⚠️ 咳血可能是严重疾病的信号（如肺结核、肺癌、肺栓塞、支气管扩张等），尤其是大量咳血或伴有呼吸困难、胸痛、发热等症状时，应**立即就医**，避免延误诊治。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择药物：\n\n- **干咳无痰**：推荐右美沙芬、可待因糖浆；如伴咽痒，可使用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐氨溴索（沐舒坦）、乙酰半胱氨酸或氨溴特罗口服液。\n\n若咳嗽持续超过2周，或伴有发热、胸痛、呼吸困难、咳血等症状，应及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "干咳",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳（即干咳无痰）推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若干咳持续超过2周，建议就医，并考虑进行胸部CT、血常规、支原体抗体等检查以明确病因。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择药物：\n\n- **干咳无痰**：推荐右美沙芬、可待因糖浆；如伴咽痒，可使用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐氨溴索（沐舒坦）、乙酰半胱氨酸或氨溴特罗口服液。\n\n若咳嗽持续超过2周，或伴有发热、胸痛、呼吸困难、咳血等症状，应及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "72岁男性，胸痛伴心慌，有高血压病史，首先考虑什么疾病？需要做什么检查？",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "72岁男性，胸痛伴心慌，且有高血压病史，**首先考虑心血管疾病**，尤其是：\n\n- **急性冠脉综合征**（包括不稳定型心绞痛、急性心肌梗死）  \n- **高血压急症或高血压性心脏病**  \n- **心律失常**（如房颤、室性早搏等）\n\n---\n\n### 建议立即进行以下检查：\n\n1. **心电图**（ECG）：快速筛查心肌缺血、损伤或心律失常。  \n2. **心肌损伤标志物**（如肌钙蛋白、CK-MB）：评估是否存在心肌坏死。  \n3. **血压监测**：判断是否为高血压急症（如血压 ≥180/120 mmHg）。  \n4. **心脏彩超**：评估心脏结构、功能及是否存在左室肥厚、心衰等。  \n5. **电解质与肾功能**：尤其在使用降压药或利尿剂的情况下。\n\n---\n\n⚠️ **重要提醒**：  \n若胸痛持续不缓解、呈压榨性、伴大汗、恶心、放射至左肩或下颌，应**立即拨打急救电话**，高度警惕急性心肌梗死，需紧急处理。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择药物：\n\n- **干咳无痰**：推荐右美沙芬、可待因糖浆；如伴咽痒，可使用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐氨溴索（沐舒坦）、乙酰半胱氨酸或氨溴特罗口服液。\n\n若咳嗽持续超过2周，或伴有发热、胸痛、呼吸困难、咳血等症状，应及时就医。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "干咳无痰",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰推荐使用：\n\n- **右美沙芬**  \n- **可待因糖浆**\n\n如伴有咽痒，可选用 **氢溴酸右美沙芬片**。\n\n若干咳持续超过2周，建议及时就医，并考虑进行以下检查以排除潜在病因：  \n- 胸部CT  \n- 血常规  \n- 支原体抗体  \n\n（参考：咳嗽超过3周需排查肺部占位、间质性病变或感染等）",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽干咳无痰",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "干咳无痰（即咳嗽无痰、常伴咽痒或刺激感）的推荐处理如下：\n\n### ✅ 药物推荐：\n- **右美沙芬**（中枢性镇咳药，适用于无痰干咳）  \n- **可待因糖浆**（较强效镇咳药，需谨慎使用，部分国家/地区需处方）  \n- 如伴有**咽痒**，可选用 **氢溴酸右美沙芬片**\n\n### ⚠️ 注意事项：\n- 避免盲目使用止咳药掩盖病情，尤其当咳嗽持续时间较长。\n- 若干咳**持续超过2周**，建议就医，并考虑以下检查：\n  - **胸部CT**（排除肺部感染、结核、肿瘤、间质性肺病等）  \n  - **血常规**  \n  - **支原体抗体**（排查非典型病原体感染）\n\n如有发热、胸痛、呼吸困难、体重下降或夜间盗汗等症状，请及时就诊。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽需根据类型选择药物：\n\n- **干咳无痰**：推荐右美沙芬、可待因糖浆；如伴咽痒，可使用氢溴酸右美沙芬片。  \n- **湿咳有痰**：推荐氨溴索（沐舒坦）、乙酰",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "咳嗽",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "咳嗽的处理需根据类型区分：\n\n### ✅ **1. 干咳无痰**（刺激性咳嗽，无痰或少痰）  \n- **推荐药物**：  \n  - 右美沙芬（中枢镇咳药）  \n  - 可待因糖浆（较强效，必要时使用）  \n  - 若伴咽痒：氢溴酸右美沙芬片  \n\n### ✅ **2. 湿咳有痰**（咳嗽伴有明显痰液）  \n- **推荐药物**：  \n  - 氨溴索（沐舒坦）  \n  - 乙酰半胱氨酸  \n  - 氨溴特罗口服液（兼具祛痰和平喘作用）  \n\n---\n\n### ⚠️ 何时就医？\n- 咳嗽持续 **超过2周**  \n- 出现以下“危险信号”：  \n  - 发热、胸痛、呼吸困难  \n  - 咳血、体重下降、夜间盗汗  \n  - 声音嘶哑、吞咽困难  \n\n若为干咳且持续不愈，建议检查：**胸部CT、血常规、支原体抗体**，以排除感染、过敏、胃食管反流或肺部器质性疾病。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  },
+  {
+    "type": "human",
+    "data": {
+      "content": "我阳痿",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "阳痿（医学上称为勃起功能障碍，ED）是一种常见男性健康问题，可能由多种因素引起，包括心理、血管、神经、内分泌或药物相关原因。\n\n虽然您提供的参考资料中**未包含针对阳痿的推荐检查或治疗方案**，但根据临床常规建议如下：\n\n---\n\n### ✅ 初步建议：\n1. **生活方式调整**：  \n   - 戒烟限酒  \n   - 控制体重、规律运动  \n   - 管理压力与焦虑\n\n2. **排查基础疾病**：  \n   阳痿常与以下疾病相关，建议检查：  \n   - **血糖**（筛查糖尿病）  \n   - **血脂、血压**（评估心血管风险）  \n   - **性激素六项**（尤其是睾酮水平）  \n   - **甲状腺功能**\n\n3. **药物使用史回顾**：  \n   某些降压药、抗抑郁药等可能引起ED。\n\n---\n\n### ⚠️ 何时就医？\n- 症状持续超过数周  \n- 影响生活质量或情绪  \n- 伴有性欲减退、早泄或其他泌尿系统症状\n\n医生可能会进一步安排：**夜间阴茎勃起监测、阴茎血流多普勒超声**等检查。\n\n> 📌 注意：不要自行服用“壮阳药”（如西地那非等），应在医生指导下使用，尤其如果您有心脏病或正在服用硝酸酯类药物（如硝酸甘油），合用可能导致严重低血压甚至危及生命。\n\n建议您前往**泌尿外科或男科**就诊，进行系统评估。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]
