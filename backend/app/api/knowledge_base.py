@@ -3,15 +3,16 @@
 """
 import os
 import tempfile
-from fastapi import APIRouter, HTTPException, UploadFile, File, Form, Query
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form, Query, Depends
 from ..services import kb_service, log_service
+from ..core.security import require_admin
 
 router = APIRouter(prefix="/api/knowledge-base", tags=["知识库"])
 
 
 @router.get("/documents")
-async def get_documents():
-    """获取知识库文档列表"""
+async def get_documents(admin: str = Depends(require_admin)):
+    """获取知识库文档列表（仅管理员）"""
     ks = kb_service.KnowledgeBaseService()
     docs = ks.get_all_documents()
     return {"documents": docs, "total": len(docs)}
@@ -21,8 +22,9 @@ async def get_documents():
 async def upload_file(
     file: UploadFile = File(...),
     operator: str = Form("", description="操作人工号"),
+    admin: str = Depends(require_admin),
 ):
-    """上传文件到知识库"""
+    """上传文件到知识库（仅管理员）"""
     # 读取文件内容
     content_bytes = await file.read()
     file_name = file.filename or "unknown"
@@ -76,8 +78,12 @@ async def upload_file(
 
 
 @router.delete("/documents/{source_name}")
-async def delete_document(source_name: str, operator: str = Query("", description="操作人工号")):
-    """删除知识库文档"""
+async def delete_document(
+    source_name: str,
+    operator: str = Query("", description="操作人工号"),
+    admin: str = Depends(require_admin),
+):
+    """删除知识库文档（仅管理员）"""
     ks = kb_service.KnowledgeBaseService()
     result = ks.delete_document(source_name)
 

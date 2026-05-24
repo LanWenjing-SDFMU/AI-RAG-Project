@@ -22,6 +22,7 @@ CREATE_USERS_TABLE = """
 CREATE TABLE IF NOT EXISTS users (
     work_id     TEXT PRIMARY KEY,
     password    TEXT NOT NULL,
+    role        TEXT NOT NULL DEFAULT 'doctor',
     created_at  TEXT NOT NULL DEFAULT (datetime('now', 'localtime'))
 );
 """

@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .core.database import init_database
-from .api import auth, dashboard, diagnosis, knowledge_base, chat, diagnosis_assist, drug_safety, logs
+from .api import auth, dashboard, diagnosis, knowledge_base, chat, diagnosis_assist, drug_safety, logs, users
 
 # 初始化数据库
 init_database()
@@ -34,6 +34,7 @@ app.include_router(chat.router)
 app.include_router(diagnosis_assist.router)
 app.include_router(drug_safety.router)
 app.include_router(logs.router)
+app.include_router(users.router)
 
 
 @app.get("/api/health")

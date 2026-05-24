@@ -85,6 +85,16 @@ export const drugSafetyApi = {
   },
 }
 
+// ==================== 用户管理 ====================
+export const userApi = {
+  getList() {
+    return request.get('/users/list')
+  },
+  deleteUser(workId) {
+    return request.delete(`/users/${workId}`)
+  },
+}
+
 // ==================== 操作日志 ====================
 export const logApi = {
   getList(params) {

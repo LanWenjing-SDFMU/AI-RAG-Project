@@ -1,8 +1,9 @@
 """
 操作日志 API 路由
 """
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, Depends
 from ..services import log_service
+from ..core.security import require_admin
 
 router = APIRouter(prefix="/api/logs", tags=["操作日志"])
 
@@ -13,8 +14,9 @@ async def get_logs(
     page_size: int = Query(20, ge=1, le=100),
     action_type: str = Query(None, description="操作类型筛选"),
     keyword: str = Query(None, description="关键词搜索"),
+    admin: str = Depends(require_admin),
 ):
-    """获取操作日志列表"""
+    """获取操作日志列表（仅管理员）"""
     result = log_service.get_logs(
         page=page,
         page_size=page_size,
@@ -25,8 +27,8 @@ async def get_logs(
 
 
 @router.get("/stats")
-async def get_log_stats():
-    """获取日志统计信息"""
+async def get_log_stats(admin: str = Depends(require_admin)):
+    """获取日志统计信息（仅管理员）"""
     today_count = log_service.get_today_count()
     type_stats = log_service.get_action_type_stats()
     return {
@@ -36,6 +38,6 @@ async def get_log_stats():
 
 
 @router.get("/action-types")
-async def get_action_types():
-    """获取操作类型列表"""
+async def get_action_types(admin: str = Depends(require_admin)):
+    """获取操作类型列表（仅管理员）"""
     return log_service.ACTION_TYPE_LABELS

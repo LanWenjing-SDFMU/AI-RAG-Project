@@ -52,13 +52,16 @@ def get_diagnosis_stats() -> dict:
         ).fetchall()
         stats["disease_distribution"] = [dict(r) for r in disease_rows]
 
+        # 查询所有日期的诊断记录数，按日期降序取最近7天
         date_rows = conn.execute(
             """SELECT SUBSTR(create_time, 1, 10) as date, COUNT(*) as count
                FROM diagnosis_records
                GROUP BY date
-               ORDER BY date ASC"""
+               ORDER BY date DESC
+               LIMIT 7"""
         ).fetchall()
-        stats["daily_trend"] = [dict(r) for r in date_rows]
+        # 反转回升序排列
+        stats["daily_trend"] = [dict(r) for r in reversed(date_rows)]
 
         doctor_rows = conn.execute(
             """SELECT doctor as name, COUNT(*) as count

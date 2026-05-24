@@ -20,13 +20,14 @@ async def login(req: LoginRequest):
         "access_token": result["token"],
         "token_type": "bearer",
         "work_id": result["work_id"],
+        "role": result.get("role", "doctor"),
     }
 
 
 @router.post("/register")
 async def register(req: RegisterRequest):
     """用户注册"""
-    result = auth_service.register(req.work_id, req.password)
+    result = auth_service.register(req.work_id, req.password, role=req.role)
     if not result["success"]:
         raise HTTPException(status_code=400, detail=result["message"])
 

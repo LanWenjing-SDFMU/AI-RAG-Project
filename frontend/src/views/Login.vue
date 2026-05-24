@@ -38,6 +38,16 @@
                 show-password
               />
             </el-form-item>
+            <el-form-item label="角色" prop="role">
+              <el-select
+                v-model="loginForm.role"
+                placeholder="请选择角色"
+                style="width: 100%"
+              >
+                <el-option label="医生" value="doctor" />
+                <el-option label="管理员" value="admin" />
+              </el-select>
+            </el-form-item>
             <el-form-item>
               <el-button
                 type="primary"
@@ -84,6 +94,16 @@
                 show-password
               />
             </el-form-item>
+            <el-form-item label="角色" prop="role">
+              <el-select
+                v-model="registerForm.role"
+                placeholder="请选择角色"
+                style="width: 100%"
+              >
+                <el-option label="医生" value="doctor" />
+                <el-option label="管理员" value="admin" />
+              </el-select>
+            </el-form-item>
             <el-form-item>
               <el-button
                 type="primary"
@@ -123,17 +143,20 @@ const registerFormRef = ref(null)
 const loginForm = reactive({
   work_id: '',
   password: '',
+  role: 'doctor',
 })
 
 const registerForm = reactive({
   work_id: '',
   password: '',
   confirmPassword: '',
+  role: 'doctor',
 })
 
 const loginRules = {
   work_id: [{ required: true, message: '请输入工号', trigger: 'blur' }],
   password: [{ required: true, message: '请输入密码', trigger: 'blur' }],
+  role: [{ required: true, message: '请选择角色', trigger: 'change' }],
 }
 
 const registerRules = {
@@ -155,6 +178,7 @@ const registerRules = {
       trigger: 'blur',
     },
   ],
+  role: [{ required: true, message: '请选择角色', trigger: 'change' }],
 }
 
 function clearMessage() {
@@ -168,7 +192,7 @@ async function handleLogin() {
   loading.value = true
   try {
     const res = await authApi.login(loginForm)
-    userStore.setLogin(res.access_token, res.work_id)
+    userStore.setLogin(res.access_token, res.work_id, res.role || 'doctor')
     ElMessage.success('登录成功')
     router.push('/dashboard')
   } catch (err) {
@@ -188,6 +212,7 @@ async function handleRegister() {
     await authApi.register({
       work_id: registerForm.work_id,
       password: registerForm.password,
+      role: registerForm.role,
     })
     ElMessage.success('注册成功，请登录')
     activeTab.value = 'login'
@@ -195,6 +220,7 @@ async function handleRegister() {
     registerForm.work_id = ''
     registerForm.password = ''
     registerForm.confirmPassword = ''
+    registerForm.role = 'doctor'
   } catch (err) {
     message.value = err.response?.data?.detail || '注册失败'
     messageType.value = 'error'

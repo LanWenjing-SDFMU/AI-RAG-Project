@@ -2,6 +2,7 @@
 JWT 认证模块
 """
 from datetime import datetime, timedelta, timezone
+from fastapi import HTTPException, Header
 from jose import JWTError, jwt
 from .config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES
 
@@ -22,3 +23,27 @@ def verify_token(token: str) -> dict | None:
         return payload
     except JWTError:
         return None
+
+
+async def get_current_user(authorization: str = Header("", description="Bearer Token")) -> str:
+    """从 Authorization header 获取当前登录用户的工号"""
+    token = authorization
+    if token.startswith("Bearer "):
+        token = token[7:]
+    payload = verify_token(token)
+    if payload is None:
+        raise HTTPException(status_code=401, detail="未登录或 Token 已过期")
+    return payload.get("sub", "")
+
+
+async def require_admin(authorization: str = Header("", description="Bearer Token")) -> str:
+    """验证当前用户是否为管理员，返回工号"""
+    token = authorization
+    if token.startswith("Bearer "):
+        token = token[7:]
+    payload = verify_token(token)
+    if payload is None:
+        raise HTTPException(status_code=401, detail="未登录或 Token 已过期")
+    if payload.get("role") != "admin":
+        raise HTTPException(status_code=403, detail="仅管理员可执行此操作")
+    return payload.get("sub", "")

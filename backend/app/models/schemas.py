@@ -14,12 +14,26 @@ class LoginRequest(BaseModel):
 class RegisterRequest(BaseModel):
     work_id: str = Field(..., description="工号")
     password: str = Field(..., description="密码（至少4位）")
+    role: str = Field("doctor", description="角色：doctor（医生）/ admin（管理员）")
 
 
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     work_id: str
+    role: str = "doctor"
+
+
+# ==================== 用户管理 ====================
+class UserInfo(BaseModel):
+    work_id: str
+    role: str
+    created_at: str
+
+
+class UserListResponse(BaseModel):
+    users: list
+    total: int
 
 
 # ==================== 诊断记录 ====================

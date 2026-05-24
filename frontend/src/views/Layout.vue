@@ -27,13 +27,10 @@
           active-text-color="#409EFF"
           router
         >
+          <!-- ====== 医生 & 管理员 通用菜单 ====== -->
           <el-menu-item index="/dashboard">
             <el-icon><HomeFilled /></el-icon>
             <span>首页</span>
-          </el-menu-item>
-          <el-menu-item index="/knowledge-base">
-            <el-icon><FolderOpened /></el-icon>
-            <span>知识库管理</span>
           </el-menu-item>
           <el-menu-item index="/diagnosis-assist">
             <el-icon><Search /></el-icon>
@@ -51,10 +48,23 @@
             <el-icon><Document /></el-icon>
             <span>患者诊断记录</span>
           </el-menu-item>
-          <el-menu-item index="/logs">
-            <el-icon><List /></el-icon>
-            <span>操作日志</span>
-          </el-menu-item>
+
+          <!-- ====== 管理员专属菜单 ====== -->
+          <template v-if="userStore.isAdmin">
+            <el-divider class="menu-divider" />
+            <el-menu-item index="/knowledge-base">
+              <el-icon><FolderOpened /></el-icon>
+              <span>知识库管理</span>
+            </el-menu-item>
+            <el-menu-item index="/users">
+              <el-icon><UserFilled /></el-icon>
+              <span>用户管理</span>
+            </el-menu-item>
+            <el-menu-item index="/logs">
+              <el-icon><List /></el-icon>
+              <span>操作日志</span>
+            </el-menu-item>
+          </template>
         </el-menu>
 
         <div class="sidebar-footer">
@@ -177,6 +187,11 @@ async function handleLogout() {
 .el-menu {
   border-right: none;
   flex: 1;
+}
+
+.menu-divider {
+  margin: 4px 12px;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .sidebar-footer {

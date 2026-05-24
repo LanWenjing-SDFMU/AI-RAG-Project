@@ -10,13 +10,15 @@ def _hash_password(password: str) -> str:
     return hashlib.sha256(password.encode("utf-8")).hexdigest()
 
 
-def register(work_id: str, password: str) -> dict:
+def register(work_id: str, password: str, role: str = "doctor") -> dict:
     """注册新用户"""
     work_id = work_id.strip()
     if not work_id:
         return {"success": False, "message": "工号不能为空"}
     if not password or len(password) < 4:
         return {"success": False, "message": "密码长度不能少于4位"}
+    if role not in ("doctor", "admin"):
+        return {"success": False, "message": "角色无效"}
 
     conn = get_connection()
     try:
@@ -25,8 +27,8 @@ def register(work_id: str, password: str) -> dict:
             return {"success": False, "message": f"工号「{work_id}」已存在，请直接登录"}
 
         conn.execute(
-            "INSERT INTO users (work_id, password) VALUES (?, ?)",
-            (work_id, _hash_password(password)),
+            "INSERT INTO users (work_id, password, role) VALUES (?, ?, ?)",
+            (work_id, _hash_password(password), role),
         )
         conn.commit()
         return {"success": True, "message": "注册成功"}
@@ -45,7 +47,7 @@ def login(work_id: str, password: str) -> dict:
     conn = get_connection()
     try:
         row = conn.execute(
-            "SELECT password FROM users WHERE work_id = ?", (work_id,)
+            "SELECT password, role FROM users WHERE work_id = ?", (work_id,)
         ).fetchone()
         if row is None:
             return {"success": False, "message": f"工号「{work_id}」不存在，请先注册"}
@@ -53,7 +55,7 @@ def login(work_id: str, password: str) -> dict:
         if row["password"] != _hash_password(password):
             return {"success": False, "message": "密码错误"}
 
-        token = create_access_token({"sub": work_id})
-        return {"success": True, "message": "ok", "token": token, "work_id": work_id}
+        token = create_access_token({"sub": work_id, "role": row["role"]})
+        return {"success": True, "message": "ok", "token": token, "work_id": work_id, "role": row["role"]}
     finally:
         conn.close()
